@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: aliceblue;
+}
+
+.headerContents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: xx-large;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.noble {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+  padding: 12px 20px 12px 20px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgba(130, 204, 192, 0.5);
+}
+
+.button-text {
+  color: aliceblue;
+}
+
+.header-button {
+  margin-left: 40px;
+}
+
+.heroButton {
+  margin-top: 20px;
+}
+/* 
+.body {
+  
+} */
+
+.hero-section {
+  background-color: rgb(0 110 117);
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.hero-components {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.strip {
+  background-color: rgba(130, 204, 192, 0.5);
+  width: fit-content;
+  padding: 12px 20px 12px 20px;
+  border-radius: 20px;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: xxx-large;
+  max-width: 550px;
+  color: aliceblue;
+}
+
+.exerpt {
+  max-width: 440px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+  line-height: 180%;
+}
+
+.hero-image {
+  padding-right: 40px;
+}
+
+.about-section {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
