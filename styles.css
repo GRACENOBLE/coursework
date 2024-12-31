@@ -57,6 +57,14 @@ h2 {
   list-style-type: none;
 }
 
+.sidebar-trigger {
+  color: aliceblue;
+  visibility: hidden;
+  position: absolute;
+  right: 20px;
+  font-size: x-large;
+}
+
 .nav-link {
   color: rgba(255, 255, 255, 0.6);
   transition: color 0.3s ease-in-out;
@@ -71,6 +79,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .logo {
@@ -109,6 +118,9 @@ h2 {
 @media (max-width: 480px) {
   .navigation {
     display: none;
+  }
+  .sidebar-trigger {
+    visibility: visible;
   }
 }
 
