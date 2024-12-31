@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grace Noble</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container headerContents">
-        <div class="logo">Grace <span class="noble">Noble</span></div>
+        <a href="#hero" class="logo">Grace <span class="noble">Noble</span></a>
         <nav>
           <ul class="navigation">
             <li>
-              <a href="" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li>
-              <a href="" class="nav-link">Projects</a>
+              <a href="#projects" class="nav-link">Projects</a>
             </li>
-            <button class="button header-button">
-              <span class="button-text">Contact me</span>
-            </button>
+            <a href="#contact"
+              ><button class="button header-button">
+                <span class="button-text">Contact me</span>
+              </button>
+            </a>
           </ul>
         </nav>
       </div>
     </header>
     <div class="body">
-      <section class="hero-section">
+      <section class="hero-section" id="hero">
         <div class="container">
           <div class="hero-components">
             <div class="hero-text">
@@ -40,9 +46,11 @@
                 Dont let your ground-breaking idea slip your mind. Let me bring
                 it to life with my set of skills.
               </p>
-              <button class="button heroButton">
-                <span class="button-text">Get in touch</span>
-              </button>
+              <a href="#contact">
+                <button class="button heroButton">
+                  <span class="button-text">Get in touch</span>
+                </button>
+              </a>
             </div>
 
             <img
@@ -53,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container">
           <div>
             <h2 class="about-heading">About Me</h2>
@@ -93,7 +101,7 @@
           </div>
         </div>
       </section>
-      <section class="projects-section">
+      <section class="projects-section" id="projects">
         <div class="container">
           <div class="projects-text">
             <h2>Projects</h2>
@@ -199,6 +207,53 @@
               </div>
             </a>
           </div>
+          <div class="github">
+            <a href="https://github.com/GRACENOBLE"> Checkout more </a>
+            <i class="fa-solid fa-arrow-right"> </i>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h2>Contact me</h2>
+          <p>
+            Reach out by filling this form or using my socials, <br />lets start
+            the journey towards making that dream a reality.
+          </p>
+          <form action="">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input
+                class="form-input"
+                name="name"
+                type="text"
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input
+                class="form-input"
+                name="email"
+                type="text"
+                placeholder="johndoe@gmail.com"
+              />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea
+                class="form-input text-area"
+                name="message"
+                type="text"
+                placeholder="Type your message here"
+              ></textarea>
+            </div>
+            <div class="form-button-div">
+              <button type="button" class="button form-button">
+                Send message
+              </button>
+            </div>
+          </form>
         </div>
       </section>
       <footer class="footer">Copyright © 2024 Asiimwe Grace Noble</footer>
